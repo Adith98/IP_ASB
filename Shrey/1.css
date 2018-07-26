@@ -1,0 +1,88 @@
+body 
+{
+	background: url('back.jpeg') no-repeat;
+	background-size: cover;
+	font-family: Arial;
+	color: white;
+}
+
+
+.menu
+{
+	width: 100%;
+}
+
+
+.menu ul 
+{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+.menu ul li
+{
+	float: left;
+	width: 200px;
+	height: 40px;
+	background-color: black; 
+	opacity: .8;
+	line-height: 40px;
+	text-align: center;
+	font-size: 20px;
+	margin-right: 1px;
+}
+
+
+.menu ul li a 
+{
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+
+.menu ul li a:hover
+{
+	background-color: green;
+}
+
+
+.menu ul li ul li
+{
+	display: none;
+}
+
+
+.menu ul li:hover ul li
+{
+	display: block;
+}
+
+
+.seach-form
+{
+	margin-top: 20px;
+	float: right;
+	margin-right: 100px;
+}
+
+input[type="text"]
+{
+	padding: 12px;
+	border: none;
+}
+
+button
+{
+	float: right;
+	background: black;
+	color: white;
+	cursor: pointer;
+	position: relative;
+	padding: 7px;
+	font-family: Arial;
+	border: none;
+	font-size: 20px;
+}
