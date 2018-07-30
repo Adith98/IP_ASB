@@ -1,7 +1,7 @@
 body {font-family:'Times New Roman', Times, serif;
        background-image: url("images/Wallpaper.jpg");
        background-repeat: no-repeat;
-       background-size: 100%}
+       background-size: auto;}
 nav{
     margin: 0 0 0 9%;
     color:rgb(223, 148, 63);
@@ -10,6 +10,10 @@ nav{
 nav a{
     color:aliceblue;
     text-decoration: none;
+}
+nav a:hover{
+    background-color: maroon;
+    
 }
 
 ul{
@@ -42,16 +46,15 @@ ul li:hover{
     width:30%;
     background:rgb(26, 7, 7);
     height:90%;
-    display:block;
-    margin: auto auto auto 9%;
+    margin:auto auto auto 9% ;
     position: absolute;
-    top:9%;
     border-radius: 2%;
+    top:9%;
     border: 2px solid red;
     }
 
 .mySlides {
-    display: none;
+    display:none;
 
   }
 
