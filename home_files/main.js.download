@@ -29,20 +29,3 @@ function plusSlides(n) {
      currentSlide(newslideIndex);
   }
 }
-
-window.onscroll = function() {myFunction()};
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-var number = document.getElementsByClassName("mySlides");
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-    document.getElementById("chgpad").style.marginTop = "20%";
-    document.getElementById("nav").style.display = "block";
-} else {
-    header.classList.remove("sticky");
-    document.getElementById("chgpad").style.marginTop = "5%";
-  }
-}
