@@ -39,10 +39,12 @@ var number = document.getElementsByClassName("mySlides");
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementById("chgpad").style.marginTop = "20%";
+    document.getElementById("chgpad").style.marginTop = "15%";
     document.getElementById("nav").style.display = "block";
+    document.getElementById("some").style.backgroundColor = "rgba(27, 2, 2, 0.493)";
 } else {
     header.classList.remove("sticky");
     document.getElementById("chgpad").style.marginTop = "5%";
+    document.getElementById("some").style.backgroundColor = "";
   }
 }
