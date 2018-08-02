@@ -62,6 +62,7 @@ ul li:hover{
     border-bottom: 6px solid rgb(0, 0, 0);
     height:20%;
     position: relative;
+    z-index: 1000;
     
 }
 
@@ -99,12 +100,15 @@ ul li:hover{
     margin:5% auto auto 5%;
     padding:0;
     background-color: palevioletred;
+    
+ 
 }
 .product{
     background-color: black;
     box-shadow: 5px 10px #00000038;
     position: relative;
     margin: 1%;
+    
 }
 
 .prev, .next {
