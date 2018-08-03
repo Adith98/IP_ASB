@@ -38,7 +38,7 @@ function plusSlides(n) {
   }
   else if(newslideIndex=4){
     newslideIndex = 1;
-    currentSlide(newslideIndex2);
+    currentSlide(newslideIndex);
   }
 }
 
