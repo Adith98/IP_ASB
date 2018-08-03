@@ -12,7 +12,6 @@ nav{
     margin: 0 auto 0 79%;
     padding: 1% 0 0 0;
     height:5%;
-    
 }
 .nav{
     display:none;
@@ -58,12 +57,11 @@ ul li:hover{
 .header{
     width:100%;
     margin:0;
-    background:rgba(230, 171, 171, 0.253);
+    background:rgb(255, 255, 255);
     border-bottom: 6px solid rgb(0, 0, 0);
     height:20%;
     position: relative;
     z-index: 1000;
-    
 }
 
 .slideshow{
@@ -73,42 +71,53 @@ ul li:hover{
     margin:0;
 }
 
+.featured{
+    width:30%;
+    background:rgb(26, 7, 7);
+    height:70%;
+    right:3%;
+    top:128%;
+    float:right;
+    position: absolute;
+}
+
 .mySlides {
     display:none;
 }
 
+.mySlides1 {
+    display:none;
+}
+p {
+    color:white;
+    font-size: 100%;
+    position: absolute;
+    top: 3%;
+    padding: 0 0 0 45%; 
+}
 .text {
     color: #ff0404;
     position: absolute;
     bottom: 10%;
     left: 40%;
     font-size:2vw;
-
-
 }
 
 .active {
     background-color: #717171;
   }
 
-@media only screen and (max-width: 300px) {
+  @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
 }
 .yourclass{
-    width:50%;
-    height:30%;
-    margin:5% auto auto 5%;
-    padding:0;
-    background-color: palevioletred;
-    
- 
+    width:100%;
 }
 .product{
     background-color: black;
     box-shadow: 5px 10px #00000038;
     position: relative;
-    margin: 1%;
-    
+    border: 2px solid rgb(231, 56, 12);
 }
 
 .prev, .next {
@@ -122,19 +131,33 @@ ul li:hover{
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-  }
+}
   
-  /* Position the "next button" to the right */
-.next {
+.prev1, .next1 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+}
+  
+.next,.next1 {
     right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  /* On hover, add a black background color with a little bit see-through */
+
+}
+
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
-  }
+}
+
+.prev1:hover, .next1:hover {
+    background-color: rgba(0,0,0,0.8);
+}
 
 .bt1{
     position: absolute;
@@ -147,6 +170,76 @@ ul li:hover{
     top:0;
     margin:0;
     width: 100%;
-  }
+}
 
+.slider{
+    width:60%;
+    height:30%;
+    margin:3% auto auto 3%;
+}
+
+.slider1{
+    width:60%;
+    height:30%;
+    margin:4% auto auto 3%;
+}
+
+footer{
+    width:100%;
+    margin:7% 0 0 0;
+    position:absolute;
+    padding:1% 0 1% 0;
+    background-color: tomato;
+    overflow: hidden;
+}
+
+ul1 li h5{
+    margin:auto auto 1% 0;
+    padding:0; 
+    color:white;
+}
+
+ul1 li h3{
+    margin:auto auto 0 auto;
+    color:rgb(14, 5, 5); 
+}
+
+ul1 li{
+    margin-top:1%;
+}
+
+ul1{ 
+    text-align:center;
+    list-style-type: none;
+}
+
+.foot{
+    float: left;
+    width:24.4%; 
+    border-right: 6px solid rgb(0, 0, 0);
+    margin:0;
+    padding:0;
+}
+.overlay {
+    position: absolute;
+    opacity: 0;
+    color:white;
+    text-align: center;
+    transition: .5s ease;
+    background-color: rgba(255, 255, 255, 0.192);
+    top:0;
+    height:100%;
+    width:100%
+  }
+.overlay a{
+    text-decoration: none;
+    color:white;
+    padding:10%;
+}
+.overlay a:hover{
+    color:orangered;
+}
+  .product:hover .overlay {
+    opacity: 1;
+  }
   

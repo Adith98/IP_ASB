@@ -1,5 +1,7 @@
 var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");
+var slideIndex1 = 0;
+var slides1 = document.getElementsByClassName("mySlides1");
 
 showSlides();
 
@@ -25,10 +27,33 @@ function currentSlide(no) {
 
 function plusSlides(n) {
   var newslideIndex = slideIndex + n;
-  if(newslideIndex < 4 && newslideIndex > 0){
+  if(newslideIndex< 4 && newslideIndex > 0){
      currentSlide(newslideIndex);
   }
 }
+
+function currentSlide1(no) {
+    var i;    
+    for (i = 0; i < slides1.length; i++) {
+        slides1[i].style.display = "none"; 
+    }
+    slideIndex1 = no;
+    slides1[no-1].style.display = "block";
+}
+
+function plusSlides1(n) {
+  var newslideIndex1 = slideIndex1 + n;
+  if(newslideIndex1 < 4 && newslideIndex1 > 0){
+     currentSlide1(newslideIndex1);
+  }
+}
+
+
+
+
+
+
+
 
 window.onscroll = function() {myFunction()};
 
@@ -39,12 +64,13 @@ var sticky = header.offsetTop;
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementById("chgpad").style.marginTop = "15%";
+    document.getElementById("slider").style.marginTop = "12.2%";
     document.getElementById("nav").style.display = "block";
-    document.getElementById("some").style.backgroundColor = "rgba(27, 2, 2, 0.493)";
+    document.getElementById("some").style.display = "none";
 } else {
     header.classList.remove("sticky");
-    document.getElementById("chgpad").style.marginTop = "5%";
+    document.getElementById("some").style.display = "";
+    document.getElementById("slider").style.marginTop = "2%";
     document.getElementById("some").style.backgroundColor = "";
   }
 }
