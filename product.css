@@ -1,0 +1,96 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    margin:0;
+    background: url(images/Wallpaper.jpg) no-repeat center center fixed; 
+   
+}
+.header{
+    width:100%;
+    background:rgb(255, 255, 255);
+    border-bottom: 6px solid rgb(0, 0, 0);
+    height:20%;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+}
+nav{
+    margin: 0 auto 0 79%;
+    padding: 1% 0 0 0;
+    height:5%;
+}
+.nav{
+    margin:0;
+    padding:0;
+}
+
+nav a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right:5%;
+    font-size: 70%;
+    font-weight: bold;
+    letter-spacing: 50%;
+    font-family: 'PT Sans', sans-serif;
+}
+
+nav a:hover{
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+.BuyingPage{
+    width:80%;
+    height:90%;
+    margin:11% auto auto auto;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.left{
+    background-color: orange;
+    width:50%;
+    height:100%;
+    position:absolute;
+}
+.right{
+    width:50%;
+    height:100%;
+    background-color: olive;
+    left:50%;
+    position:absolute;
+
+}
+.Separate{
+    position:absolute;
+    height:77%;
+    width:70%;
+    left:15%;
+    top:3%;
+    
+}
+.Separate img{
+    border-radius: 5%;
+    border: 2px solid rgb(231, 56, 12);
+    width:100%;
+    height:100%;
+}
+.Buy{
+    position:absolute;
+    height:17%;
+    width:70%;
+    left:15%;
+    top:83%;
+}
+.bt1{
+    text-decoration: none;
+    color:rgb(7, 5, 5);    
+    margin:5% 0 5% 10%;
+    width:40%;
+    height:40%;
+    float:right;
+}
+.bt2{
+    text-decoration: none;
+    color:rgb(7, 5, 5);    
+    margin:5% 10% 5% 0;
+    width:40%;
+    height:40%;
+    float:left;
+}

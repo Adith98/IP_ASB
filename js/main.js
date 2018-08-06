@@ -1,3 +1,5 @@
+var brandIndex = 0;
+var brands = document.getElementsByClassName("brand");
 var slideIndex = 0;
 var slides = document.getElementsByClassName("mySlides");
 var slideIndex1 = 0;
@@ -10,37 +12,17 @@ showSlides();
 function showSlides() {    
     var i;    
     for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
+        slides[i].style.display = "none";
+        brands[i].style.display = "none";  
     }
     slideIndex++;
-    if (slideIndex> slides.length) {slideIndex = 1} 
-    slides[slideIndex-1].style.display = "block"; 
-    setTimeout(showSlides, 8000); // Change image every 5 seconds
+    brandIndex++;
+    if (slideIndex> slides.length && brandIndex> brands.length) {slideIndex = 1;brandIndex = 1;} 
+    slides[slideIndex-1].style.display = "block";
+    brands[brandIndex-1].style.display = "block"; 
+    setTimeout(showSlides, 3000); // Change image every 5 seconds
 }
 
-function currentSlide(no) {
-    var i;    
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none"; 
-    }
-    slideIndex = no;
-    slides[no-1].style.display = "block";
-}
-
-function plusSlides(n) {
-  var newslideIndex = slideIndex + n;
-  if(newslideIndex == -1 || newslideIndex == 0){
-    newslideIndex = 3;
-    currentSlide(newslideIndex);
-  }
-  else if(newslideIndex < 4 && newslideIndex > 0){
-   currentSlide(newslideIndex);
-  }
-  else if(newslideIndex=4){
-    newslideIndex = 1;
-    currentSlide(newslideIndex);
-  }
-}
 
 function currentSlide1(no) {
     var i;    

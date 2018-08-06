@@ -1,11 +1,7 @@
 body {
     font-family:'Times New Roman', Times, serif;
     margin:0;
-    background: url(images/Wallpaper.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+ 
 }
 
 nav{
@@ -13,6 +9,7 @@ nav{
     padding: 1% 0 0 0;
     height:5%;
 }
+
 .nav{
     display:none;
     margin:0;
@@ -73,20 +70,29 @@ ul li:hover{
 
 .featured{
     width:30%;
-    background:rgb(26, 7, 7);
+    background-image: url(images/featured.png); 
+    border:4px solid rgb(241, 0, 0);
     height:70%;
     right:3%;
-    top:128%;
-    float:right;
+    top:125%;
     position: absolute;
 }
+.brands{
+    position: absolute;
+    width:30%;
+    height:15%;
+    right:3%;
+    top:200%;
+    background-color: black;
+}
+
 .featured1{
     width:30%;
-    background:rgb(26, 7, 7);
+    background-image: url(images/featured.png); 
+    border:4px solid rgb(255, 0, 0);
     height:70%;
     right:3%;
-    top:208%;
-    float:right;
+    top:221%;
     position: absolute;
 }
 
@@ -97,9 +103,11 @@ ul li:hover{
 .mySlides1 {
     display:none;
 }
+
 .mySlides2 {
     display:none;
 }
+
 p {
     color:white;
     font-size: 100%;
@@ -107,6 +115,7 @@ p {
     top: 3%;
     padding: 0 0 0 45%; 
 }
+
 .text {
     color: #ff0404;
     position: absolute;
@@ -122,9 +131,11 @@ p {
   @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
 }
+
 .yourclass{
     width:100%;
 }
+
 .product{
     background-color: black;
     box-shadow: 5px 10px #00000038;
@@ -132,19 +143,6 @@ p {
     border: 2px solid rgb(231, 56, 12);
 }
 
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-}
-  
 .prev1, .next1 {
     cursor: pointer;
     position: absolute;
@@ -157,6 +155,7 @@ p {
     font-size: 18px;
     transition: 0.6s ease;
 }
+
 .prev2, .next2 {
     cursor: pointer;
     position: absolute;
@@ -182,16 +181,11 @@ p {
 .prev1:hover, .next1:hover {
     background-color: rgba(0,0,0,0.8);
 }
+
 .prev2:hover, .next2:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
-.bt1{
-    position: absolute;
-    bottom: 3%;
-    padding: 0 0 0 45%;
-}
-  
 .sticky {
     position: fixed;
     top:0;
@@ -208,16 +202,16 @@ p {
 .slider1{
     width:60%;
     height:30%;
-    margin:4% auto auto 3%;
+    margin:6% auto auto 3%;
 }
 
 footer{
-    width:100%;
     margin:7% 0 0 0;
-    position:absolute;
+    bottom:0;
     padding:1% 0 1% 0;
     background-color: tomato;
     overflow: hidden;
+    position: relative;
 }
 
 ul1 li h5{
@@ -236,17 +230,12 @@ ul1 li{
 }
 
 ul1{ 
-    text-align:center;
+    text-align: center;
     list-style-type: none;
+    float: left;
+    width: 25%;
 }
 
-.foot{
-    float: left;
-    width:24.4%; 
-    border-right: 6px solid rgb(0, 0, 0);
-    margin:0;
-    padding:0;
-}
 .overlay {
     position: absolute;
     opacity: 0;
@@ -257,22 +246,37 @@ ul1{
     top:0;
     height:100%;
     width:100%
-  }
+}
+
 .overlay a{
     text-decoration: none;
     color:white;
-    padding:10%;
+    bottom: 10%;
+    left:43%;
+    position:absolute;
 }
+
 .overlay a:hover{
-    color:orangered;
+    transform: scale(1.5);
+    color:greenyellow;
 }
-  .product:hover .overlay {
+
+.product:hover .overlay {
     opacity: 1;
 }
-h4{
+
+.overlay h4{
     padding:0;
-    margin:10% 0 0 0 ;
+    margin:5% 0 0 0 ;
 }
+
+.slider h3,.slider1 h3{
+ padding:0;margin:0;
+ color:white;
+ padding:2% 0 2% 42%;
+ background-color: rgba(178, 34, 34, 0.459);
+}
+
 .product img{
     width: 100%;
     height: 100%;
