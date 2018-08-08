@@ -72,12 +72,6 @@ function plusSlides2(n) {
   }
 }
 
-
-
-
-
-
-
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");

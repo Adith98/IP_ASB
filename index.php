@@ -48,7 +48,7 @@ $db_handle = new DBController();
   <h3>Product Category</h3>
     <div class="yourclass">
         <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct`");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
 	    ?>
@@ -70,7 +70,7 @@ $db_handle = new DBController();
   <h3>Product Category</h3>
     <div class="yourclass">
         <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct`");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
 	    ?>
@@ -92,7 +92,7 @@ $db_handle = new DBController();
   <h3>Product Category</h3>
     <div class="yourclass">
         <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct`");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
 	    ?>
@@ -114,7 +114,7 @@ $db_handle = new DBController();
   <h3>Product Category</h3>
     <div class="yourclass">
         <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM tblproduct ORDER BY id ASC");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct`");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
 	    ?>

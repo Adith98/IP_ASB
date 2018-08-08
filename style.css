@@ -1,6 +1,8 @@
 body {
     font-family:'Times New Roman', Times, serif;
     margin:0;
+	background: url(images/Wallpaper.jpg) no-repeat center center fixed; 
+   
  
 }
 
@@ -11,7 +13,6 @@ nav{
 }
 
 .nav{
-    display:none;
     margin:0;
     padding:0;
 }
@@ -71,12 +72,13 @@ ul li:hover{
 .featured{
     width:30%;
     background-image: url(images/featured.png); 
-    border:4px solid rgb(241, 0, 0);
+    border:4px solid rgb(8, 3, 3);
     height:70%;
     right:3%;
     top:125%;
     position: absolute;
 }
+
 .brands{
     position: absolute;
     width:30%;
@@ -89,7 +91,7 @@ ul li:hover{
 .featured1{
     width:30%;
     background-image: url(images/featured.png); 
-    border:4px solid rgb(255, 0, 0);
+    border:4px solid rgb(22, 9, 9);
     height:70%;
     right:3%;
     top:221%;
@@ -140,7 +142,7 @@ p {
     background-color: black;
     box-shadow: 5px 10px #00000038;
     position: relative;
-    border: 2px solid rgb(231, 56, 12);
+    border: 3px solid black;
 }
 
 .prev1, .next1 {
@@ -202,14 +204,14 @@ p {
 .slider1{
     width:60%;
     height:30%;
-    margin:6% auto auto 3%;
+    margin:7% auto auto 3%;
 }
 
 footer{
     margin:7% 0 0 0;
     bottom:0;
     padding:1% 0 1% 0;
-    background-color: tomato;
+    background-color: #2e2e2e;
     overflow: hidden;
     position: relative;
 }
@@ -271,13 +273,135 @@ ul1{
 }
 
 .slider h3,.slider1 h3{
- padding:0;margin:0;
+ padding:0;margin:0 0 0.5% 0;
  color:white;
  padding:2% 0 2% 42%;
- background-color: rgba(178, 34, 34, 0.459);
+ background-color: black;
+ border:4px solid white;
 }
 
 .product img{
     width: 100%;
     height: 100%;
 }
+
+.BuyingPage{
+    width:80%;
+    height:100%;
+    margin:11% auto auto auto;
+    background-color: rgba(58, 52, 52, 0.301);
+    position: relative;
+}
+.left{
+    width:48.5%;
+    height:99%;
+    left:1%;top:1%;
+    position:absolute;
+}
+.price{
+    display:block;
+    border-bottom: 1px solid black;
+}
+.offers{
+    display:block;
+    border-bottom: 1px solid black;
+    padding:2% 0 4% 0;
+    overflow: hidden;
+}
+.description{
+    display:block;
+    border-bottom: 1px solid black;
+    padding-top:5%;
+    overflow: hidden;
+}
+.right h2{
+    padding:1% 0 0 2% ;
+    margin:0;color:rgb(228, 252, 255);
+}
+.right h4{
+    padding:2% 0 0 2% ;
+    margin:0;color:rgb(228, 252, 255);
+}
+.right h5{
+    padding:4% 0 3% 2% ;
+    margin:0;color:rgb(49, 243, 233);
+}
+.right{
+    width:48.5%;
+    height:99%;
+    right:1%;top:1%;
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.233);
+}
+.Separate{
+    display:block;
+    height:100%;
+    width:98%;
+    margin: auto;
+}
+.list{
+    display:block;
+    position:absolute;
+    width:12%;
+    height:98%;
+}
+.image{
+    display:block;
+    position:absolute;
+    left:12%;
+    width:87%;
+    height:98%;
+}
+.image img{
+    width:97%;
+    height:100%;
+    margin:0 0 0 3%;
+}
+.Buy{
+    position:absolute;
+    height:17%;
+    width:70%;
+    left:15%;
+    top:83%;
+}
+.bt1{
+    color:rgb(7, 5, 5);    
+    margin:5% 15% 5% 5%;
+    width:30%;
+    height:10%;
+    float:right;
+}
+.bt2{
+    color:rgb(7, 5, 5);    
+    margin:5% 5% 5% 15%;
+    width:30%;
+    height:10%;
+    float:left;
+}
+
+.list img{
+    width:90%;
+    height:10%;
+    margin:0 1% 10% 0;
+}
+
+.list img:hover{
+    border:3px solid black;
+}
+
+.offers_list a h4{
+    text-decoration: none;
+    float:right;
+    margin:4% 2% 0 0;
+    color:red;
+    padding:0;
+}
+.offers_list a h4:hover{
+    background-color: antiquewhite;
+}
+.offers_list h3{
+    padding:4% 0 0 2% ;
+    margin:0;color:rgb(228, 252, 255);
+    display:inline-block;
+}
+

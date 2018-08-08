@@ -38,38 +38,65 @@ nav a:hover{
 }
 .BuyingPage{
     width:80%;
-    height:90%;
+    height:100%;
     margin:11% auto auto auto;
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(58, 52, 52, 0.301);
     position: relative;
 }
 .left{
-    background-color: orange;
-    width:50%;
-    height:100%;
+    width:48.5%;
+    height:99%;
+    left:1%;top:1%;
     position:absolute;
 }
+.price{
+    display:block;
+    background-color: rgba(255, 255, 255, 0.233);
+    border-bottom: 1px solid black;
+}
+.price h2{
+    padding:1% 0 0 2% ;
+    margin:0;color:rgb(228, 252, 255);
+}
+.price h4{
+    padding:2% 0 0 2% ;
+    margin:0;color:rgb(228, 252, 255);
+}
+.price h5{
+    padding:4% 0 3% 2% ;
+    margin:0;color:rgb(49, 243, 233);
+}
 .right{
-    width:50%;
-    height:100%;
-    background-color: olive;
-    left:50%;
+    width:48.5%;
+    height:99%;
+    right:1%;top:1%;
     position:absolute;
 
 }
 .Separate{
-    position:absolute;
-    height:77%;
-    width:70%;
-    left:15%;
-    top:3%;
-    
-}
-.Separate img{
-    border-radius: 5%;
-    border: 2px solid rgb(231, 56, 12);
-    width:100%;
+    display:block;
     height:100%;
+    width:98%;
+    margin: auto;
+}
+.list{
+    display:block;
+    position:absolute;
+    width:12%;
+    height:98%;
+    background-color: aqua;
+}
+.image{
+    display:block;
+    position:absolute;
+    left:12%;
+    width:87%;
+    height:98%;
+}
+.image img{
+    width:97%;
+    height:100%;
+    margin:0 0 0 3%;
 }
 .Buy{
     position:absolute;
