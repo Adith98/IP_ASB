@@ -78,15 +78,24 @@ var header = document.getElementById("myHeader");
 var sticky = header.offsetTop;
 
 
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    document.getElementById(cityName).style.display = "block";
+
+}
+
 function myFunction() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    document.getElementById("slider").style.marginTop = "12.2%";
-    document.getElementById("nav").style.display = "block";
+    document.getElementById("slider").style.marginTop = "16.3%";
     document.getElementById("some").style.display = "none";
 } else {
     header.classList.remove("sticky");
-    document.getElementById("some").style.display = "";
+    document.getElementById("some").style.display = ""
     document.getElementById("slider").style.marginTop = "2%";
     document.getElementById("some").style.backgroundColor = "";
   }
