@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("dbcontroller.php");
+require_once("db/dbcontroller.php");
 $db_handle = new DBController();
 ?>
 
@@ -51,14 +51,14 @@ $db_handle = new DBController();
   <h6 class="text-center pt-5"><i>Shop from a variety of Supreme quality fabrics available in our inventory</i></h6>
     <div class="card-group">
     <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct` where id<=3");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `home` where id<=3");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
           $_SESSION['code'] = $product_array[$key]["code"];
 	    ?>
        <div class="card p-2 border-light" >
             <div class="card-header text-center bg-dark text-light"><i><?php echo $product_array[$key]["name"]; ?></i></div>
-            <img class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap">
+            <a href="specific.php"> <img class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap"></a>
         </div>
         <?php
 			}
@@ -87,14 +87,14 @@ $db_handle = new DBController();
 <h6 class="text-center pt-5"><i>Categorized in a way that you would find your desired fabric in a second</i></h6>
 <div class="card-group">
     <?php
-	        $product_array = $db_handle->runQuery("SELECT * FROM `tblproduct` where id<=6 and id>=4 ");
+	        $product_array = $db_handle->runQuery("SELECT * FROM `home` where id<=6 and id>=4 ");
 	        if (!empty($product_array)) { 
 		    foreach($product_array as $key=>$value){
           $_SESSION['code'] = $product_array[$key]["code"];
 	    ?>
        <div class="card p-2 border-light" >
             <div class="card-header text-center bg-dark text-light"><i><?php echo $product_array[$key]["name"]; ?></i></div>
-            <img class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap">
+            <a href="specific?name=<?php echo $product_array[$key]["name"]; ?>"><img class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap"></a>
         </div>
         <?php
 			}
@@ -103,7 +103,7 @@ $db_handle = new DBController();
     </div>
     <div class="card p-5 border-light" >
             <div class="card-header text-center bg-dark text-light"><i>Festive and Wedding</i></div>
-            <img src="images/F&W.jpg" class="card-img-top" alt="Card image cap">
+            <a href="specific?name=Festive"><img src="images/F&W.jpg" class="card-img-top" alt="Card image cap"></a>
         </div>
     </div>
   <?php include 'footer.php'; ?>

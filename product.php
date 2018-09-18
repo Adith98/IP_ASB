@@ -1,8 +1,8 @@
 <?php
 session_start();
-require_once("dbcontroller.php");
+require_once("db/dbcontroller.php");
 $db_handle = new DBController();
-$_SESSION['code']=$_POST["code"];
+$code= $_GET["code"];
 ?>
 <?php include 'header.php'; ?>
 <div class="container" style="margin-top:10;">
@@ -10,21 +10,22 @@ $_SESSION['code']=$_POST["code"];
     <div class="col-sm-6">
       <div class="row">
         <div class="col-2">
-          <img class="zoom img-fluid img-thumbnail" id="img1" src="Cloth Samples\sample1.jpg" onmouseover="show1()">
-          <img class="zoom img-fluid img-thumbnail" id="img2" src="Cloth Samples\sample2.jpg" onmouseover="show2()">
-          <img class="zoom img-fluid img-thumbnail" id="img3" src="Cloth Samples\sample3.jpg" onmouseover="show3()">
-          <img class="zoom img-fluid img-thumbnail" id="img4" src="Cloth Samples\sample4.jpg" onmouseover="show4()">
-          <img class="zoom img-fluid img-thumbnail" id="img5" src="Cloth Samples\sample5.jpg" onmouseover="show5()">
-          <img class="zoom img-fluid img-thumbnail" id="img6" src="Cloth Samples\sample6.jpg" onmouseover="show6()">
+          <img class="zoom img-fluid img-thumbnail" id="img1" src="Cloth Samples\MEN\sample3.jpg" onmouseover="show1()">
+          <img class="zoom img-fluid img-thumbnail" id="img2" src="Cloth Samples\MEN\sample2.jpg" onmouseover="show2()">
+          <img class="zoom img-fluid img-thumbnail" id="img3" src="Cloth Samples\MEN\sample5.jpg" onmouseover="show3()">
+          <img class="zoom img-fluid img-thumbnail" id="img4" src="Cloth Samples\WOMEN\Ladies6.png" onmouseover="show4()">
+          <img class="zoom img-fluid img-thumbnail" id="img5" src="Cloth Samples\KIDS\child1.jpg" onmouseover="show5()">
+          <img class="zoom img-fluid img-thumbnail" id="img6" src="Cloth Samples\WOMEN\Ladies1.png" onmouseover="show6()">
         </div>
         <div class="col">
           <?php 
-            $product_array = $db_handle->runQuery("SELECT * FROM tblproduct where code='{$_SESSION['code']}'");
+            $product_array = $db_handle->runQuery("SELECT * FROM tblproduct where code='$code'");
             if (!empty($product_array)) { 
             foreach($product_array as $key=>$value){
               $_SESSION['product_image']= $product_array[$key]["image"];
               $_SESSION['product_name']=$product_array[$key]["name"];
               $_SESSION['product_price']=$product_array[$key]["price"];
+              $_SESSION['code']=$product_array[$key]["code"];
               
         
         ?>

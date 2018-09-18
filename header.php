@@ -41,25 +41,25 @@
         <ul class="navbar-nav mr-auto" >
         <li class="nav-item ">
           <?php $_SESSION['categ']="men"; ?>
-            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific">
+            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=Men">
               <b>Men</b>
             </a>
           </li>
           <li class="nav-item">
             <?php $_SESSION['categ']="women" ;?>
-            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific">
+            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=Women">
               <b>Women</b>
             </a>
           </li>
           <li class="nav-item">
           <?php $_SESSION['categ']="kids"; ?>
-            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific">
+            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=kids">
               <b>Kids</b>
             </a>
           </li>
           <li class="nav-item">
           <?php $_SESSION['categ']="f&w"; ?>
-            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific">
+            <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=festive">
               <b>Festive and Wedding</b>
             </a>
           </li>

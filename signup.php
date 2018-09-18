@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("dbcontroller.php");
+require_once("db/dbcontroller.php");
 $db_handle = new DBController();
 if(isset($_SESSION['loggedin'])){
   header("Location:http://localhost/IP_ASB/home");

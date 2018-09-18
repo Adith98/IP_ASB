@@ -1,3 +1,8 @@
+<?php
+session_start(); 
+if(isset($_SESSION['loggedin'])){
+  header("Location:http://localhost/IP_ASB/");
+} ?>
 <html>
 <head>
   <title>Kapde Ka Dukaan</title>
@@ -69,3 +74,4 @@
     crossorigin="anonymous"></script>
 </body>
 </html>
+    

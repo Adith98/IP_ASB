@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("dbcontroller.php");
+require_once("db/dbcontroller.php");
 $db_handle = new DBController();
 
 $email = $_POST['email'];
@@ -18,8 +18,7 @@ if($db_handle->connectDB()->query($query) === TRUE)
         `code` varchar(255) NOT NULL,
         `image` text NOT NULL,
         `price` double(10,2) NOT NULL,
-        PRIMARY KEY (`id`),
-        UNIQUE KEY `product_code` (`code`)
+        PRIMARY KEY (`id`)
       )";
     $db_handle->connectDB()->query($sql);
     header("Location:http://localhost/IP_ASB/login");
