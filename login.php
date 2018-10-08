@@ -13,8 +13,8 @@ $db_handle = new DBController();
         <input type="password" id="password" placeholder="Password"  name="password">
         <button class="btn btn-primary" id="submit" type="submit">Login</button><br><br>
         <p class="form-message"></p>
-        <a href="login.php" style="float:left; padding-left:10">Recover Password</a><br><br>
-        <a href="signup.php" style="float:left; padding-left:10">Not a Member? Signup</a>
+        <a href="login.php">Recover Password</a><br><br>
+        <a href="signup.php">Not a Member? Signup</a>
       </form>
     </div>
   </div>

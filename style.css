@@ -35,10 +35,6 @@ header {
     display: block;
 }
 
-.slick-prev:before,
-.slick-next:before {
-    color: Black;
-}
 
 .brand:hover{
     text-decoration: none;
@@ -73,7 +69,7 @@ header {
   }
 }
 
-/*home.php*/
+/*specific.php*/
 
 .ovl{
     opacity:0;
@@ -132,7 +128,6 @@ select {
 
     .contain {
         margin: 5px auto auto auto;
-        padding-bottom:14px;
         text-align: center;
         box-shadow: 3px 3px 3px 3px rgb(172, 133, 136);
         width: 450px;
@@ -180,4 +175,23 @@ select {
     .col-2{
         padding-right: 0;
     }
+}
+
+/*home.php*/
+@media(min-width:581px){
+    .FW1{
+        width:75%;
+        margin:auto;
+    }
+    .FW{
+        height:65%;
+   }
+}
+@media(max-width:580px){
+    .FW1{
+        width:100%;
+    }
+    .FW{
+        height:50%;
+   }
 }

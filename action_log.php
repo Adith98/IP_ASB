@@ -59,13 +59,14 @@
      success = "<?php echo $success ?>";
     
     if(errorEmpty == true){
-        $("#email","#password").addClass("border border-danger");
+        $("#email").addClass("border border-danger");
+        $("#password").addClass("border border-danger");
     }
     if(errorEmail == true){
-        $("#email").addClass("border border-danger");
+        $("#email").val("");
     }
     if(errorPassword == true){
-        $("#password").addClass("border border-danger");
+        $("#password").val("");
     }   
     if(errorEmpty == false && errorEmail == false && errorPassword == false){
         $("#email","#password").val("");

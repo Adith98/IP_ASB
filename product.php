@@ -10,12 +10,12 @@ $code= $_GET["code"];
     <div class="col-sm-6">
       <div class="row">
         <div class="col-2">
-          <img class="zoom img-fluid img-thumbnail" id="img1" src="Cloth Samples\MEN\sample3.jpg" onmouseover="show1()">
-          <img class="zoom img-fluid img-thumbnail" id="img2" src="Cloth Samples\MEN\sample2.jpg" onmouseover="show2()">
-          <img class="zoom img-fluid img-thumbnail" id="img3" src="Cloth Samples\MEN\sample5.jpg" onmouseover="show3()">
-          <img class="zoom img-fluid img-thumbnail" id="img4" src="Cloth Samples\WOMEN\Ladies6.png" onmouseover="show4()">
-          <img class="zoom img-fluid img-thumbnail" id="img5" src="Cloth Samples\KIDS\child1.jpg" onmouseover="show5()">
-          <img class="zoom img-fluid img-thumbnail" id="img6" src="Cloth Samples\WOMEN\Ladies1.png" onmouseover="show6()">
+          <img class="zoom img-fluid img-thumbnail" id="img1" src="Cloth Samples\MEN\suit\s01.jpg" onmouseover="show1()">
+          <img class="zoom img-fluid img-thumbnail" id="img2" src="Cloth Samples\MEN\suit\s02.jpg" onmouseover="show2()">
+          <img class="zoom img-fluid img-thumbnail" id="img3" src="Cloth Samples\MEN\suit\s03.jpg" onmouseover="show3()">
+          <img class="zoom img-fluid img-thumbnail" id="img4" src="Cloth Samples\MEN\suit\s05.jpg" onmouseover="show4()">
+          <img class="zoom img-fluid img-thumbnail" id="img5" src="Cloth Samples\MEN\suit\s07.jpg" onmouseover="show5()">
+          <img class="zoom img-fluid img-thumbnail" id="img6" src="Cloth Samples\MEN\suit\s06.jpg" onmouseover="show6()">
         </div>
         <div class="col">
           <?php 
