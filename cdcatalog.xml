@@ -1,0 +1,27 @@
+<catalog>
+<cd>
+<title>Adith Shetty</title>
+<artist>34</artist>
+<country>Third Year</country>
+<company>TE-6</company>
+<price>B</price>
+<year>1985</year>
+</cd>
+<cd>
+<title>Shrey Trivedi</title>
+<artist>43</artist>
+<country>Third Year</country>
+<company>TE-6</company>
+<price>B</price>
+<year>1988</year>
+</cd>
+<cd>
+<title>Monil Shah</title>
+<artist>33</artist>
+<country>Third Year</country>
+<company>TE-6</company>
+<price>B</price>
+<year>1982</year>
+</cd>
+
+</catalog>

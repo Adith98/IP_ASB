@@ -1,3 +1,36 @@
+<script>
+function fx(str)
+{
+var s1=document.getElementById("qu").value;
+var xmlhttp;
+if (str.length==0) {
+    document.getElementById("livesearch").innerHTML="";
+    document.getElementById("livesearch").style.border="0px";
+	  document.getElementById("livesearch").style.display="none";
+	  $('#textbox-clr').text("");
+    return;
+  }
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("livesearch").innerHTML=xmlhttp.responseText;
+  	document.getElementById("livesearch").style.display="block";
+	$('#textbox-clr').text("X");
+    }
+  }
+xmlhttp.open("GET","call_ajax.php?n="+s1,true);
+xmlhttp.send();	
+}
+</script>  
 <html>
 <head>
   <title>KapdeKaDukaan</title>
@@ -15,13 +48,13 @@
 <header class="sticky-top">
     <ul class="nav justify-content-end" style="height:10px">
     <li class="nav-item a">
-    <a class="nav-link active" href="notyetready.php">Gift Cards</a>
+    <a class="nav-link active" href="index_xml.php">About us</a>
   </li>
   <li class="nav-item a">
     <a class="nav-link" href="notyetready.php" >Track Orders</a>
   </li>
   <li class="nav-item a">
-    <a class="nav-link" href="notyetready.php" >Contact us</a>
+    <a class="nav-link" href="contactus.php" >Contact us</a>
   </li>
     </ul>
     <nav class="navbar navbar-light">
@@ -29,8 +62,7 @@
         <img src="images/logo.png" width="30" height="40" class="d-inline-block align-top" alt="" style="margin-right:10px">
         Kapde Ka Dukaan
       </a>
-
-    </nav>
+  </nav>
     <nav class="navbar navbar-expand-lg navbar-light">
       <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,35 +72,32 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto" >
         <li class="nav-item ">
-          <?php $_SESSION['categ']="men"; ?>
             <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=Men">
               <b>Men</b>
             </a>
           </li>
           <li class="nav-item">
-            <?php $_SESSION['categ']="women" ;?>
             <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=Women">
               <b>Women</b>
             </a>
           </li>
           <li class="nav-item">
-          <?php $_SESSION['categ']="kids"; ?>
             <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=kids">
               <b>Kids</b>
             </a>
           </li>
           <li class="nav-item">
-          <?php $_SESSION['categ']="f&w"; ?>
             <a class="nav-link text-danger mr-3" href="http://localhost/IP_ASB/specific?name=festive">
               <b>Festive and Wedding</b>
             </a>
           </li>
         </ul>
         <div class="Search">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <form action="search.php" method="get" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" onKeyUp="fx(this.value)" autocomplete="off" name="qu" id="qu" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
+          <div class="scrollable-menu" id="livesearch"></div></div>
         </div>
       </div>
       <ul class="nav">
@@ -133,5 +162,4 @@
 
     </nav>
   </header>
-
  

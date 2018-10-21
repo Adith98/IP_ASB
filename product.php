@@ -45,9 +45,9 @@ $code= $_GET["code"];
           <p class="card-text">Inclusive of all taxes</p>
           <div class="dropdown-divider"></div>
           <h5 class="card-title">Product Details:</h5>
-          <p class="card-text">1. ldkslkasdkmasdkamsd</p>
-          <p class="card-text">2. ldkslkasdkmasdkamsd</p>
-          <p class="card-text">3. ldkslkasdkmasdkamsd</p>
+          <p class="card-text">1. Brand -</p>
+          <p class="card-text">2. Material -</p>
+          <p class="card-text">3. Color -</p>
           <form action="<?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) 
           {
           ?>cart.php

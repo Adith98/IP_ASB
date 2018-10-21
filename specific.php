@@ -32,7 +32,7 @@ $categ=$_GET['name'];
 		    foreach($product_array as $key=>$value){
 	    ?>
       <div class="card bg-dark text-white">
-        <img class="card-img" src="<?php echo $product_array[$key]["image"]; ?>">
+        <img height="190px" width="285px" class="card-img" src="<?php echo $product_array[$key]["image"]; ?>">
         <div class="card-img-overlay ovl">
           <p class="card-title">
             <?php echo $product_array[$key]["name"]; ?>
