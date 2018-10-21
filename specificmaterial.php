@@ -16,7 +16,7 @@ $type=$_GET['name'];
         <div id="blah" class="col-4">
         <div class="card">
             <div class="card-header text-center bg-dark text-light"><i><?php echo $product_array[$key]["name"]; ?></i></div>
-            <a href="specific?name=<?php echo $product_array[$key]["name"]; ?>"> <img class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap"></a>
+            <a href="product?code=<?php echo $product_array[$key]["code"]; ?>"><img height="190px" width="285px" class="card-img-top" src="<?php echo $product_array[$key]["image"]; ?>" alt="Card image cap"></a>
         </div>
         </div>
         <?php

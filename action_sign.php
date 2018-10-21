@@ -10,6 +10,8 @@ $number = $_POST['number'];
 $c_password = $_POST['c_password'];
 $gender = $_POST['gender'];
 
+$success = false;
+
 if(empty($email) || empty($password) || empty($username) || empty($number) || empty($gender) || empty($c_password)){
     echo "<span>Fill in all fields</span>";
 }
@@ -53,8 +55,9 @@ else
       )";
     $db_handle->connectDB()->query($sql);
     echo "<span>Successfully logged in</span>";
+    $success= true;
     }else{
-        echo "<span>Error has occured</span>";
+        echo "<span>Error has occured : Email, Username or Number is already registered </span>";
     }
 }
 ?>

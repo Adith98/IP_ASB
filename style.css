@@ -9,7 +9,7 @@ header {
     color: rgb(0, 0, 0);
 }
 
-.a a:hover{
+.a a:hover {
     color: red;
 }
 
@@ -36,10 +36,11 @@ header {
 }
 
 
-.brand:hover{
+.brand:hover {
     text-decoration: none;
-    color:darkblue;
+    color: darkblue;
 }
+
 /*Index.php*/
 .carousel-inner img {
     width: 100%;
@@ -47,43 +48,50 @@ header {
 }
 
 @media(min-width:581px) {
-  .one{
-  content:url("images/Wallpaper.jpg");
-  }
-  .two{
-  content:url("images/Wallpaper1.jpg");
-  }
-  .three{
-  content:url("images/Wallpaper2.jpg");
-  }
+    .one {
+        content: url("images/Wallpaper.jpg");
+    }
+
+    .two {
+        content: url("images/Wallpaper1.jpg");
+    }
+
+    .three {
+        content: url("images/Wallpaper2.jpg");
+    }
 }
+
 @media(max-width:580px) {
-  .one{
-  content:url("images/mobile1.jpg");
-  }
-  .two{
-  content:url("images/mobile2.jpg");
-  }
-  .three{
-  content:url("images/mobile3.jpg");
-  }
+    .one {
+        content: url("images/mobile1.jpg");
+    }
+
+    .two {
+        content: url("images/mobile2.jpg");
+    }
+
+    .three {
+        content: url("images/mobile3.jpg");
+    }
 }
 
 /*specific.php*/
 
-.ovl{
-    opacity:0;
-}
-.ovl:hover{
-    opacity:1;
+.ovl {
+    opacity: 0;
 }
 
-.height{
-    height:30%;
+.ovl:hover {
+    opacity: 1;
 }
-.height img{
-    width:100%;
-    height:100%
+
+.height {
+    height: 30%;
+}
+
+.height img {
+    width: 100%;
+    height: 100%
 }
 
 /*Signup*/
@@ -102,26 +110,29 @@ select {
     background: #000000;
 }
 
-.form-error{
-    color:red;
+.form-error {
+    color: red;
 }
-.input-error{
+
+.input-error {
     box-shadow: 0 0 20px red;
 }
-.form-success{
+
+.form-success {
     color: green;
 }
-.form-message{
-    color:red;
+
+.form-message {
+    color: red;
 }
 
 @media(min-width:581px) {
-    .brand{
-        font-size:150%;
+    .brand {
+        font-size: 150%;
         font-weight: bold;
-        color:darkblue;
+        color: darkblue;
     }
-    
+
     .icon {
         font-size: 150%;
     }
@@ -134,15 +145,17 @@ select {
         background-color: beige;
         height: max-content;
     }
-    .image{
-    width:100%;
-    height:500px;
+
+    .image {
+        width: 100%;
+        height: 500px;
     }
-    .zoom{
-        width:100%;
-        height:50px;
+
+    .zoom {
+        width: 100%;
+        height: 50px;
     }
- 
+
 }
 
 .dropdown:hover>.dropdown-menu {
@@ -150,12 +163,12 @@ select {
 }
 
 @media(max-width:580px) {
-    .brand{
+    .brand {
         font-weight: bold;
-        color:darkblue;
+        color: darkblue;
     }
-    
-    
+
+
     .icon {
         font-size: 100%;
     }
@@ -164,34 +177,60 @@ select {
         font-size: 60%;
     }
 
-    .image{
-        width:100%;
-        height:200px;
-     }
-     .zoom{
-        width:100%;
-        height:40px;
+    .image {
+        width: 100%;
+        height: 200px;
     }
-    .col-2{
+
+    .zoom {
+        width: 100%;
+        height: 40px;
+    }
+
+    .col-2 {
         padding-right: 0;
     }
 }
 
 /*home.php*/
-@media(min-width:581px){
-    .FW1{
-        width:75%;
-        margin:auto;
+@media(min-width:581px) {
+    .FW1 {
+        width: 75%;
+        margin: auto;
     }
-    .FW{
-        height:65%;
-   }
+
+    .FW {
+        height: 65%;
+    }
 }
-@media(max-width:580px){
-    .FW1{
-        width:100%;
+
+@media(max-width:580px) {
+    .FW1 {
+        width: 100%;
     }
-    .FW{
-        height:50%;
-   }
+
+    .FW {
+        height: 50%;
+    }
+}
+
+.scrollable-menu {
+    position: absolute;
+    display: none;
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+    z-index: 1000;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: .25rem;
 }
